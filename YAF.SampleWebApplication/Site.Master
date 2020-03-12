@@ -23,17 +23,24 @@
         <header>
             <!-- Fixed navbar -->
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <a class="navbar-brand" runat="server" href="~/">YAF.NET SampleWebApplication</a>
+                <a class="navbar-brand" runat="server" href="~/forum/forum.aspx">1BPO Services</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
+                    <%--<ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Chat">Chat</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Forum/">Forum</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
+                    </ul>--%>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" runat="server" ></a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" ></a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" ></a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" ></a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" ></a></li>
                     </ul>
                     <div class="form-inline mt-2 mt-md-0 text-white">
                         <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
@@ -49,10 +56,16 @@
                             </AnonymousTemplate>
                             <LoggedInTemplate>
                                 Welcome &nbsp;<span class="font-weight-bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>&nbsp;
-                                <asp:LoginStatus ID="HeadLoginStatus" runat="server" 
+
+                               <asp:HyperLink id="RegisterLink1" runat="server" 
+                                            CssClass="btn btn-outline-success my-2 my-sm-0" 
+                                            Text="Click here to chat" NavigateUrl="~/chat.aspx">
+
+                               </asp:HyperLink>
+                               <asp:LoginStatus ID="HeadLoginStatus" runat="server" 
                                                  LogoutAction="Redirect" 
                                                  LogoutText="Log Out" 
-                                                 CssClass="btn btn-outline-success my-2 my-sm-0" LogoutPageUrl="~/"/>
+                                                 CssClass="btn btn-outline-success my-2 my-sm-0" LogoutPageUrl="~/forum/forum.aspx"/>
                             </LoggedInTemplate>
                         </asp:LoginView>
                     </div>
@@ -64,7 +77,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - YetAnotherForum.NET</p>
+                <p>&copy; <%: DateTime.Now.Year %> - 1BPO Services</p>
             </footer>
         </div>
 

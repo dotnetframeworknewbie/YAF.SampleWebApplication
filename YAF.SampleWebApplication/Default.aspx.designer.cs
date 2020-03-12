@@ -11,14 +11,5 @@ namespace YAF.SampleWebApplication {
     
     
     public partial class _Default {
-        
-        /// <summary>
-        /// ActiveDiscussions control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::YAF.Controls.ForumActiveDiscussion ActiveDiscussions;
     }
 }
