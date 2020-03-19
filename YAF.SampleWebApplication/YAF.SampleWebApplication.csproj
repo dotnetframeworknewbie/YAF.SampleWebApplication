@@ -1667,7 +1667,6 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
-    <Content Include="Forum\CHANGES.md" />
     <Content Include="Forum\Content\favicons\site.webmanifest" />
     <Content Include="Forum\Content\webfonts\fa-brands-400.ttf" />
     <Content Include="Forum\Content\webfonts\fa-brands-400.woff" />
@@ -1678,9 +1677,8 @@
     <Content Include="Forum\Content\webfonts\fa-solid-900.ttf" />
     <Content Include="Forum\Content\webfonts\fa-solid-900.woff" />
     <Content Include="Forum\Content\webfonts\fa-solid-900.woff2" />
-    <Content Include="Forum\LICENSE.md" />
-    <Content Include="Forum\README.md" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
